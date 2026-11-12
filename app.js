@@ -25,7 +25,7 @@ const app=document.querySelector('#app');
 const read=(key,fallback)=>{try{return JSON.parse(localStorage.getItem(key))??fallback}catch{return fallback}};
 let saved=read('omu-saved',[]),recent=read('omu-recent',[]);
 let filters={budget:'',city:'',category:'',pickup:false},filterOpen=false,filterReturn='new',gallery=0,editIndex=0,searchTerm='';
-const route=()=>{const [rawPage='home',id='']=location.hash.replace(/^#/,'').split('/');return {page:rawPage==='intro'?'home':rawPage,id}};
+const route=()=>{const [rawPage='',id='']=location.hash.replace(/^#/,'').split('/');return {page:rawPage&&rawPage!=='intro'?rawPage:'home',id}};
 const find=id=>pieces.find(x=>x.id===id);
 const persist=()=>{localStorage.setItem('omu-saved',JSON.stringify(saved));localStorage.setItem('omu-recent',JSON.stringify(recent))};
 const go=path=>{location.hash='#'+path;window.scrollTo(0,0)};

@@ -21,8 +21,10 @@ Do not write participant observations until a real person completes the task.
 - Known limits: the current catalog is not a live feed, some direct listing statuses could not be verified, and Living Room concept images represent similar-item searches.
 - Next evidence needed: one independent task-based test and its observed issues.
 
-## Publishing
+## Published project
 
-The folder is ready for a static host. Upload the **contents of `omu-site`** to a GitHub repository or other static host. For GitHub Pages, choose Settings → Pages → Deploy from a branch → `main` → `/ (root)`. Then open the public URL on a phone and check images and the core flow.
+- Website: https://serenaseo.github.io/omu-secondhand-furniture/
+- Code: https://github.com/serenaseo/omu-secondhand-furniture
+- Hosting: GitHub Pages, `main` branch, repository root.
 
-GitHub sign-in was not available to the assistant, so no public URL was created here. The class brief requires a deployed URL and code on GitHub; the local folder alone does not meet that part.
+Open the website on a phone and run the test task above. The decision log still needs observations from a real participant; none have been invented here.
